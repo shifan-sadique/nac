@@ -1,0 +1,57 @@
+exam1@mca-pc71:~/shifan/nsa$ cat > myfile
+1001	RAM	97
+1002	NEHA	89
+1010	DIVYA	77
+1025	RAHUL	65
+1012	ARUN	99
+1013	NISHA	76
+
+exam1@mca-pc71:~/shifan/nsa$ head -n 2 myfile
+1001	RAM	97
+1002	NEHA	89
+
+exam1@mca-pc71:~/shifan/nsa$ tail -n 2 myfile
+1012	ARUN	99
+1013	NISHA	76
+
+exam1@mca-pc71:~/shifan/nsa$ cat myfile > mycopyfile
+
+#count number of lines, words and character
+exam1@mca-pc71:~/shifan/nsa$ wc -l myfile
+6 myfile
+exam1@mca-pc71:~/shifan/nsa$ wc -w myfile
+18 myfile
+exam1@mca-pc71:~/shifan/nsa$ wc -m myfile
+80 myfile
+
+exam1@mca-pc71:~/shifan/nsa$ sed -n 3p myfile
+1010	DIVYA	77
+
+exam1@mca-pc71:~/shifan/nsa$ cat myfile >> myappendfile
+
+myfile.txt
+__________________
+1001	RAM	97
+1002	NEHA	89
+1010	DIVYA	77
+1025	RAHUL	65
+1012	ARUN	99
+1013	NISHA	76
+
+mycopyfile.txt
+__________________
+1001	RAM	97
+1002	NEHA	89
+1010	DIVYA	77
+1025	RAHUL	65
+1012	ARUN	99
+1013	NISHA	76
+
+myappendfile.txt
+__________________
+1001	RAM	97
+1002	NEHA	89
+1010	DIVYA	77
+1025	RAHUL	65
+1012	ARUN	99
+1013	NISHA	76
